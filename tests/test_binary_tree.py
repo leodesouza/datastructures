@@ -42,6 +42,6 @@ class TestNode(TestCase):
         self.found = self.tree.root.binary_search(10000)
         self.assertEqual(self.found, True)
 
-    def test_binary_search_5_returns_false(self):
+    def test_binary_search_7_returns_false(self):
         self.found = self.tree.root.binary_search(7)
         self.assertEqual(self.found, False, ' the target was not found')
