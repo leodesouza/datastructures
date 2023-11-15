@@ -18,6 +18,26 @@ class TestNode(TestCase):
 
         self.tree = Tree(self.root)
 
+    def test_binary_search_5_returns_true(self):
+        self.found = self.tree.root.binary_search(5)
+        self.assertEqual(self.found, True)
+
+    def test_binary_search_2_returns_true(self):
+        self.found = self.tree.root.binary_search(2)
+        self.assertEqual(self.found, True)
+
+    def test_binary_search_6_returns_true(self):
+        self.found = self.tree.root.binary_search(6)
+        self.assertEqual(self.found, True)
+
+    def test_binary_search_15_returns_true(self):
+        self.found = self.tree.root.binary_search(15)
+        self.assertEqual(self.found, True)
+
+    def test_binary_search_13_returns_true(self):
+        self.found = self.tree.root.binary_search(13)
+        self.assertEqual(self.found, True)
+
     def test_binary_search_10000_returns_true(self):
         self.found = self.tree.root.binary_search(10000)
         self.assertEqual(self.found, True)
