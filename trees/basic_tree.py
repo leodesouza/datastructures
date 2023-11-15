@@ -18,3 +18,4 @@ node.right.right = Node(10000)
 
 print(node.right.data)
 print(node.right.right.data)
+teste
